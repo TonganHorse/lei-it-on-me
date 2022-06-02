@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./photos/pexels-zachary-debottis-2953902.jpg");
+    background-size: cover;
+   background-attachment: fixed;
+   overflow-x: hidden;
+}
+
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    
+}
+.navlist-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffde59;
+    width: 100vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    z-index: 1;
+    box-shadow: rgba(0,0,0) 0px 3px 8px;
+    
+}
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.title-text{
+    color: #ff1616;
+    font-family: 'Bangers' ,cursive;
+    letter-spacing: 2px;
+    padding: 0;
+}
+.logo-image-parent{
+    object-fit: contain;
+    height: 2rem;
+    width: 2rem;
+}
+.logo{
+    object-fit: contain;
+    height: 2em;
+    width: 2em;
+    padding: 0;
+    margin-left: 5px;
+}
+.search-wrapper{
+    display: flex;
+    background-color: white;    
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-end;
+}
+.search-wrapper:hover{
+    box-shadow: rgba(255,192,203) 0px 3px 8px
+}
+.fa-magnifying-glass{
+    height: 100%;
+    padding: 5px;
+    
+}
+#search-button{
+    background-color: white; 
+    border: none; 
+    color: black;
+    padding: 4px; 
+    font-size: 12px; 
+    cursor: pointer; 
+      
+}
+
+.input{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+
+.nav-item{
+    list-style: none;
+    padding-inline: 2rem;
+}
+.nav-links{
+    font-family: 'Open Sans', cursive;
+    text-decoration: none;
+    color: #ff5a5a;
+    transition: .5s ease-in-out;
+    font-weight: bold;
+
+}
+.nav-links:hover{
+    font-size: larger;
+    color: #ff1616;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0,0,0,.7);
+    width: 50%;
+    
+    padding: 2.5rem;
+    
+    
+    
+}
+.left-side-photo-container{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+   
+    
+}
+.left-side-photo{
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgb(255, 192, 203) 0px 3px 8px;
+   
+}
+.left-side-desc{
+    text-align: justify;
+    text-indent: 5px;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    color: white;
+}
+.shop-button-container{
+    padding: 10px;
+}
+.button{
+    text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(30, 30, 30);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+ 
+}
+.button:hover{
+    color: rgb(255, 255, 255);
+  box-shadow: rgb(255, 192, 203) 0px 3px 10px;
+}
+.subheading{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 10px;
+}
+.right-side{
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.image{
+max-width: 100%;
+height: 100%;
+object-fit: cover;
+    
+}
+#get-products-section{
+  display: flex;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  
+}
+.slide{
+  width: calc(100% - 5.5rem);   
+  flex-shrink: 0;               
+  background-color: rgba(255, 255, 255, 0.922);      
+  margin: 20px 50px;          
+  display: flex;                
+  align-items: center;          
+  justify-content: center;
+  border-radius: 10px; 
+  box-shadow: rgba(45, 45, 45, 0.805) 0px 3px 8px;
+  
+  animation: slide 15s infinite;
+}
+.product-titles{
+    font-family: 'Bangers', cursive;
+    position: absolute;
+    color: white;
+    background-color: salmon;
+    font-size: xx-large;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+}
+@keyframes slide {
+    0%    { transform: translateX(0); }
+    25%   { transform: translateX( calc(-100% - 100px) ); }
+    35%   { transform: translateX( calc(-100% - 100px) ); }
+    50%   { transform: translateX( calc(-200% - 200px) ); }
+    65%   { transform: translateX( calc(-200% - 200px) ); }
+    95%   { transform: translateX( calc(-300% - 300px) ); }
+    100%  { transform: translateX( calc(-300% - 300px) ); }
+  }

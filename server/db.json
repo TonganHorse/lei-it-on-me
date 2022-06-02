@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "single-braid",
+        "colors": "Blue and Black",
+        "imageURL": "./photos/My project (6).png",
+        "price": "$28.00"
+    },
+    {
+        "id": 2,
+        "name": "Double-Braid",
+        "colors": "White and Blue",
+        "imageURL": "./photos/My project.png",
+        "price": "$40.00"
+    },
+    {
+        "id": 3,
+        "name": "single-braid",
+        "colors": "Gold and Black",
+        "imageURL": "./photos/My project (4).png",
+        "price": "$28.00"
+
+    },
+    {
+        "id": 4,
+        "name": "single-braid",
+        "colors": "Black and white",
+        "imageURL": "./photos/My project (3).png",
+        "price": "$28.00"
+    },
+    {
+        "id": 5,
+        "name": "single-braid",
+        "colors": "Black and Gold",
+        "imageURL":"./photos/My project (1).png",
+        "price": "$28.00"
+    }
+]

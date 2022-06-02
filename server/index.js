@@ -13,15 +13,6 @@ app.get('/api/products', getProducts)
 app.post('/api/products', postProduct)
 
 
-
-
-
-
-
-
-
-
-
 port = process.env.PORT || 4005
 
 app.listen(port, () => {
